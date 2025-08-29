@@ -14,6 +14,9 @@ body {
 
 a {
   color: inherit;
+}
+
+nav a {
   text-decoration: none;
 }
 
@@ -31,6 +34,18 @@ nav .link {
   margin: auto 2em;
 }
 
+.aboutmetoggle {
+  background: none;
+  border: none;
+  font-size: 1.1rem;
+  font-family: inherit;
+  color: inherit;
+}
+
+.aboutmetoggle:hover {
+  cursor: pointer;
+}
+
 #title {
   position: absolute;
   top: 0;
@@ -39,6 +54,11 @@ nav .link {
   padding: 0 0.5rem;
   font-style: italic;
   text-shadow: 2px 2px 2px #00000099;
+}
+
+#disclaimer {
+  font-size: .7rem;
+  color: #adadad;
 }
 
 .infobox {
@@ -50,6 +70,36 @@ nav .link {
   border-radius: 16px;
 }
 
+.infobox .label {
+  font-size: 1.3rem;
+  margin-left: 1.1rem;
+  font-style: italic;
+  text-decoration: underline;
+  position: absolute;
+  transform: translateY(-260%);
+}
+
 #introbox {
   margin-top: 5rem;
+}
+
+#aboutmebox {
+  margin-top: 4rem;
+}
+
+#aboutmesections {
+  list-style-type: none;
+  padding: 0;
+}
+
+#aboutmesections li {
+  margin: 18px auto;
+}
+
+.aboutmebody {
+  display: none;
+  color: #adadad;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-top: 2px;
 }

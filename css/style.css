@@ -103,3 +103,12 @@ nav .link {
   padding-right: 30px;
   margin-top: 2px;
 }
+
+.aboutmelist li::marker {
+  content: '- ';
+}
+
+.aboutmelist {
+  max-width: 100%;
+  padding-left: 50px;
+}

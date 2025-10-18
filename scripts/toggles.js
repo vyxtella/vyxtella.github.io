@@ -1,8 +1,18 @@
 document.querySelectorAll('.aboutmetoggle').forEach(button => {
   button.addEventListener('click', () => {
-    const content = button.nextElementSibling;
-    const label = button.innerHTML.substring(2);
-    content.style.display = content.style.display === 'block' ? 'none' : 'block';
-    button.innerHTML = button.innerHTML === `- ${label}` ? `+ ${label}` : `- ${label}`;
+
+    const next = button.nextElementSibling;
+    const targetClass = [...next.classList].find(cls => cls !== 'aboutmebody');
+    const label = button.innerHTML.slice(2);
+
+    document.querySelectorAll(`.aboutmebody.${targetClass}`).forEach(content => {
+
+      const isVisible = content.style.display === 'block';
+      content.style.display = isVisible ? 'none' : 'block';
+    });
+
+    button.textContent = button.textContent.startsWith('-')
+    ? `+ ${label}`
+    : `- ${label}`;
   });
 });

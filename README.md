@@ -1,2 +1,2 @@
-# vyxtella.github.io
-Vyxtella's bio website
+# vyxx.dev
+Vyxtella's website
